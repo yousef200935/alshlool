@@ -1313,7 +1313,8 @@
       </div>
       <div class="header-btns">
         <button class="icon-btn" onclick="openUpdatesModal()" title="آخر التحديثات"><i class="ti ti-bell"></i></button>
-        <button class="icon-btn" onclick="openRequirementsModal()" title="متطلبات"><i class="ti ti-clipboard-list"></i></button>
+        <button class="icon-btn" onclick="openRequirementsModal()" title="متطلبات"><i
+            class="ti ti-clipboard-list"></i></button>
         <button class="icon-btn" id="theme-toggle" title="تبديل المظهر"><i class="ti ti-moon"
             id="theme-icon"></i></button>
         <button class="icon-btn" onclick="lockApp()" title="قفل"><i class="ti ti-lock"></i></button>
@@ -1410,8 +1411,8 @@
           </div>
         </div>
         <div class="form-grid">
-          <div class="fg full"><label>اسم الطالب الكامل <span class="req-mark">*</span></label><input id="f-name" type="text"
-              placeholder="أدخل الاسم الكامل"></div>
+          <div class="fg full"><label>اسم الطالب الكامل <span class="req-mark">*</span></label><input id="f-name"
+              type="text" placeholder="أدخل الاسم الكامل"></div>
           <div class="fg"><label>الجنس <span class="req-mark">*</span></label>
             <select id="f-gender">
               <option value="">اختر الجنس</option>
@@ -1492,13 +1493,17 @@
           </div>
         </div>
         <div class="form-grid">
-          <div class="fg"><label>تاريخ التسجيل <span class="req-mark">*</span></label><input id="f-start" type="date"></div>
-          <div class="fg"><label>تاريخ انتهاء الاشتراك <span class="req-mark">*</span></label><input id="f-end" type="date"></div>
+          <div class="fg"><label>تاريخ التسجيل <span class="req-mark">*</span></label><input id="f-start" type="date">
+          </div>
+          <div class="fg"><label>تاريخ انتهاء الاشتراك <span class="req-mark">*</span></label><input id="f-end"
+              type="date"></div>
+          <div class="fg"><label>مبلغ الاشتراك (دينار)</label><input id="f-sub-amount" type="number" min="0" step="0.5" placeholder="0.00"></div>
         </div>
 
         <div class="form-grid" style="margin-top:14px">
           <div>
-            <div class="fs-block-title"><span class="n"><i class="ti ti-snowflake" style="font-size:11px"></i></span> إعدادات التجميد</div>
+            <div class="fs-block-title"><span class="n"><i class="ti ti-snowflake" style="font-size:11px"></i></span>
+              إعدادات التجميد</div>
             <div class="form-grid">
               <div class="fg">
                 <label>مدة التجميد</label>
@@ -1520,7 +1525,8 @@
             </div>
           </div>
           <div>
-            <div class="fs-block-title"><span class="n"><i class="ti ti-shirt" style="font-size:11px"></i></span> البدلة</div>
+            <div class="fs-block-title"><span class="n"><i class="ti ti-shirt" style="font-size:11px"></i></span> البدلة
+            </div>
             <label class="toggle-card" style="margin-bottom:12px">
               <input type="checkbox" id="f-suit-received" onchange="toggleSuitSize()">
               <span class="tc-switch"></span> استلم بدلة
@@ -1542,7 +1548,8 @@
           </div>
         </div>
 
-        <div class="fg full" style="margin-top:14px"><label>ملاحظات</label><input id="f-notes" type="text" placeholder="أي ملاحظات إضافية...">
+        <div class="fg full" style="margin-top:14px"><label>ملاحظات</label><input id="f-notes" type="text"
+            placeholder="أي ملاحظات إضافية...">
           <div class="field-hint">اختياري — أي معلومة إضافية تخص الطالب</div>
         </div>
 
@@ -1671,11 +1678,16 @@
                 <label>سبب الدفع <span class="req-mark">*</span></label>
                 <div class="field-hint" style="margin:-2px 0 4px">يمكن اختيار أكثر من سبب</div>
                 <div class="chip-wrap" id="pay-reasons-wrap">
-                  <label class="chip"><input type="checkbox" value="اشتراك شهري"><i class="ti ti-calendar-event" style="font-size:14px"></i> اشتراك شهري</label>
-                  <label class="chip"><input type="checkbox" value="رسوم المواصلات"><i class="ti ti-bus" style="font-size:14px"></i> رسوم المواصلات</label>
-                  <label class="chip"><input type="checkbox" value="رسوم البدلة"><i class="ti ti-shirt" style="font-size:14px"></i> رسوم البدلة</label>
-                  <label class="chip"><input type="checkbox" value="فحص حزام"><i class="ti ti-medal" style="font-size:14px"></i> فحص حزام</label>
-                  <label class="chip"><input type="checkbox" value="أخرى"><i class="ti ti-dots" style="font-size:14px"></i> أخرى</label>
+                  <label class="chip"><input type="checkbox" value="اشتراك شهري"><i class="ti ti-calendar-event"
+                      style="font-size:14px"></i> اشتراك شهري</label>
+                  <label class="chip"><input type="checkbox" value="رسوم المواصلات"><i class="ti ti-bus"
+                      style="font-size:14px"></i> رسوم المواصلات</label>
+                  <label class="chip"><input type="checkbox" value="رسوم البدلة"><i class="ti ti-shirt"
+                      style="font-size:14px"></i> رسوم البدلة</label>
+                  <label class="chip"><input type="checkbox" value="فحص حزام"><i class="ti ti-medal"
+                      style="font-size:14px"></i> فحص حزام</label>
+                  <label class="chip"><input type="checkbox" value="أخرى"><i class="ti ti-dots"
+                      style="font-size:14px"></i> أخرى</label>
                 </div>
               </div>
               <div class="fg full">
@@ -1717,8 +1729,8 @@
               </div>
             </div>
             <div style="position:relative;margin-bottom:10px">
-              <input id="pay-history-search" type="text" placeholder="🔍 ابحث باسم الطالب لعرض كل دفعاته..." autocomplete="off"
-                oninput="renderPayments()">
+              <input id="pay-history-search" type="text" placeholder="🔍 ابحث باسم الطالب لعرض كل دفعاته..."
+                autocomplete="off" oninput="renderPayments()">
             </div>
             <div id="pay-history-summary"></div>
             <div class="tbl-wrap" id="payments-list"></div>
@@ -1995,7 +2007,7 @@
       const el = document.getElementById(cid);
       if (!list.length) { el.innerHTML = `<div class="empty"><i class="ti ti-users" style="font-size:32px;display:block;margin-bottom:8px"></i>لا يوجد طلاب</div>`; return; }
       let h = `<table class="st"><thead><tr>
-    <th style="width:18%">الاسم</th><th style="width:8%">الجنس</th><th style="width:12%">الحزام</th><th style="width:14%">رقم الهاتف</th><th style="width:12%">ينتهي</th><th style="width:12%">الحالة</th><th style="width:10%">الباقي</th><th style="width:14%">إجراءات</th>
+    <th style="width:16%">الاسم</th><th style="width:7%">الجنس</th><th style="width:10%">الحزام</th><th style="width:12%">رقم الهاتف</th><th style="width:10%">ينتهي</th><th style="width:11%">الحالة</th><th style="width:9%">الباقي</th><th style="width:11%">مبلغ الاشتراك</th><th style="width:14%">إجراءات</th>
   </tr></thead><tbody>`;
       list.forEach(s => {
         const i = students.indexOf(s);
@@ -2008,6 +2020,7 @@
       <td>${(isStudentStopped(s) || getStatus(s.end, s.isFrozen, s.freezeEnd) === 'frozen') ? '—' : fmtDate(s.end)}</td>
       <td style="white-space:normal;line-height:1.6">${sBadge(s)}</td>
       <td>${remaining > 0 ? `<span class="badge" style="background:#fce8e8;color:#a01414;display:inline-block">${remaining} د.أ</span>` : '<span style="color:var(--text2);font-size:12px">—</span>'}</td>
+      <td>${s.subAmount ? `<span class="badge" style="background:#e8f5e9;color:#1a7a1a;display:inline-block">${s.subAmount} د.أ</span>` : '<span style="color:var(--text2);font-size:12px">—</span>'}</td>
       <td><div class="act-btns">
         <button class="ib" onclick="viewStudent(${i})" title="عرض"><i class="ti ti-eye"></i></button>
         <button class="ib" onclick="editStudent(${i})" title="تعديل"><i class="ti ti-edit"></i></button>
@@ -2192,6 +2205,7 @@
         dad: combinePhone(document.getElementById('f-dad-code').value, document.getElementById('f-dad').value.trim()),
         location: document.getElementById('f-location').value.trim(),
         start, end,
+        subAmount: document.getElementById('f-sub-amount').value.trim(),
         notes: document.getElementById('f-notes').value.trim(),
         belt: document.getElementById('f-belt').value,
         suitReceived: suitReceived ? 'true' : 'false',
@@ -2266,7 +2280,7 @@
       document.getElementById('f-edit-id').value = '';
       document.getElementById('form-title').textContent = 'تسجيل طالب جديد';
       document.getElementById('save-btn-lbl').textContent = 'حفظ التسجيل';
-      ['f-name', 'f-gender', 'f-dob', 'f-dad', 'f-location', 'f-start', 'f-end', 'f-notes', 'f-belt'].forEach(id => document.getElementById(id).value = '');
+      ['f-name', 'f-gender', 'f-dob', 'f-dad', 'f-location', 'f-start', 'f-end', 'f-sub-amount', 'f-notes', 'f-belt'].forEach(id => document.getElementById(id).value = '');
       document.getElementById('f-dad-code').value = '+962';
       setPhoneCode('+962');
       document.getElementById('f-suit-received').checked = false;
@@ -2289,6 +2303,7 @@
       document.getElementById('f-location').value = s.location || '';
       document.getElementById('f-start').value = s.start || '';
       document.getElementById('f-end').value = s.end || '';
+      document.getElementById('f-sub-amount').value = s.subAmount || '';
       document.getElementById('f-notes').value = s.notes || '';
       document.getElementById('f-belt').value = s.belt || '';
       buildBeltGrid(s.belt || '');
@@ -2503,6 +2518,7 @@
     <div class="detail-row"><span class="dk">مكان السكن</span><span dir="ltr">${s.Location || '—'}</span></div>
     <div class="detail-row"><span class="dk">تاريخ التسجيل</span><span>${fmtDate(s.start)}</span></div>
     <div class="detail-row"><span class="dk">انتهاء الاشتراك</span><span>${isStudentStopped(s) ? '—' : fmtDate(s.end)}</span></div>
+    <div class="detail-row"><span class="dk">مبلغ الاشتراك</span><span>${s.subAmount ? s.subAmount + ' د.أ' : '—'}</span></div>
     <div class="detail-row"><span class="dk">حالة التجميد</span><span>${(s.isFrozen === true || s.isFrozen === 'true') ? `مجمد حتى ${fmtDate(s.freezeEnd)}` : 'غير مجمد'}</span></div>
     <div class="detail-row"><span class="dk">الحالة</span><span>${isStudentStopped(s) ? '<span class="badge b-stopped">متوقف عن النادي</span>' : '<span class="badge b-act">نشط</span>'}</span></div>
     <div class="detail-row"><span class="dk">تاريخ الانتهاء الأصلي</span><span>${s.actualEndDateBeforeFreeze ? fmtDate(s.actualEndDateBeforeFreeze) : '—'}</span></div>
@@ -2613,7 +2629,8 @@
       if (remaining > 0) {
         msg += `\n\nنود تذكيركم بوجود رسوم مستحقة بقيمة ${remaining} د.أ، نرجو التكرم بتسديدها في أقرب وقت ممكن.`;
       } else if (dueSoonOrExpired) {
-        msg += `\n\nنود تذكيركم بوجود رسوم مستحقة بقيمة ____ د.أ، نرجو التكرم بتسديدها في أقرب وقت ممكن.`;
+        const amt = s.subAmount ? s.subAmount : '____';
+        msg += `\n\nنود تذكيركم بوجود رسوم مستحقة بقيمة ${amt} د.أ، نرجو التكرم بتسديدها في أقرب وقت ممكن.`;
       } else {
         msg += `\n\nنود إعلامكم بأنه لا يوجد أي رسوم مستحقة حالياً، شكراً لالتزامكم.`;
       }
@@ -3474,7 +3491,7 @@
       toast(splitCount > 1
         ? 'تم تسجيل الدفعة وتقسيمها: ' + perStudentAmountStr + ' د.أ لكل طالب (' + splitCount + ' طلاب) ✓'
         : 'تم تسجيل الدفعة ✓');
-      
+
       if (doRenew && newEnd && paySelectedStudents.length > 0) {
         for (const ps of paySelectedStudents) {
           const s = students[ps.idx];
